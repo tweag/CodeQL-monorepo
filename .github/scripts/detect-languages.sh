@@ -15,7 +15,7 @@ for file in $(find "$TARGET_DIR" -type f); do
     "js"|"ts") languages="$languages,javascript" ;;
     "py") languages="$languages,python" ;;
     "java") languages_compiled="$languages_compiled,java" ;;
-    "cpp"|"c"|"h"|"hpp"|"c++"|".cxx"|".hh"|".h++"|".hxx"|".cc") languages_compiled="$languages_compiled,cpp" ;;
+    "cpp"|"c"|"h"|"hpp"|"c++"|"cxx"|"hh"|"h++"|"hxx"|"cc") languages_compiled="$languages_compiled,cpp" ;;
     "cs"|"sln"|"csproj"|"cshtml"|"xaml") languages_compiled="$languages_compiled,csharp" ;;
     "go") languages_compiled="$languages_compiled,go" ;;
     "rb") languages="$languages,ruby" ;;
