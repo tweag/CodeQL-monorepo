@@ -4,7 +4,7 @@ name: CodeQL monorepo
 # Trigger workflow
 on:
   schedule:
-    - cron: '0 * * * *' # Every hour
+    - cron: '0 3 * * *' # Runs every day at 03:00 UTC
   workflow_dispatch:
     inputs:
       scan-folder:
