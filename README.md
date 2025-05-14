@@ -34,6 +34,6 @@ Only `project-python` and `project-java` are scanned for PRs or merges to `main`
    - Skip directories in `paths-ignore`.
 3. Enable manual and scheduled full scans.
 
-## Optional Enhancements
-- Support per-language build scripts.
-- Cache dependencies for faster scans.
+## License
+This project is licensed under the terms of the MIT open source license. Please refer to the [LICENSE](LICENSE) for the full terms.
+
