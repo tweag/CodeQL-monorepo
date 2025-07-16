@@ -20,7 +20,8 @@ fi
 
 # Get list of changed files using git diff
 changed_files=$(git diff "$base_commit" HEAD --name-only 2>/dev/null || echo "")
-echo 'git diff "$base_commit" HEAD --name-only'
+echo $base_commit
+
 # Extract top-level directories from changed files
 changed_dirs=()
 while IFS= read -r file; do
