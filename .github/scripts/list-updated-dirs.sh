@@ -18,6 +18,9 @@ else
     base_commit="HEAD^"
 fi
 
+echo $GITHUB_BASE_REF
+echo $base_commit
+
 # Get list of changed files using git diff
 changed_files=$(git diff "$base_commit" HEAD --name-only 2>/dev/null || echo "")
 
