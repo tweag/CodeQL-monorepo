@@ -20,8 +20,6 @@ fi
 
 # Get list of changed files using git diff
 changed_files=$(git diff "$base_commit" HEAD --name-only 2>/dev/null || echo "")
-echo $GITHUB_BASE_REF
-echo $base_commit
 
 # Extract top-level directories from changed files
 changed_dirs=()
