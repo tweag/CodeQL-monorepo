@@ -20,6 +20,9 @@ fi
 
 echo "aaa=$GITHUB_BASE_REF"
 echo "bbb=$base_commit"
+echo "ccc=$(git symbolic-ref HEAD^)"
+echo "ddd=$(git symbolic-ref HEAD)"
+
 
 # Get list of changed files using git diff
 changed_files=$(git diff "$base_commit" HEAD --name-only 2>/dev/null || echo "")
