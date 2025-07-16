@@ -11,12 +11,12 @@ on:
         description: 'Type the folder to scan (leave empty to scan all folders)'
         default: ''
   push:
-    branches: [main]
+    #branches: [main]
     paths-ignore:
       - 'docs/**'  # Ignore changes in docs directory
       - '*'        # Ignore files on root
   pull_request:
-    branches: [main]
+    #branches: [main]
     paths-ignore:
       - 'docs/**'  # Ignore changes in docs directory
       - '*'        # Ignore files on root
