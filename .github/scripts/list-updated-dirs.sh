@@ -10,11 +10,11 @@
 # Determine the Git reference to compare against
 if [ "$GITHUB_EVENT_NAME" = "pull_request" ]; then
     # For pull requests, compare against the base branch
-    git fetch origin "$GITHUB_BASE_REF" --depth=2  # Fetch base branch with enough depth
+    git fetch origin "$GITHUB_BASE_REF" --deepen=2  # Fetch base branch with enough depth
     base_commit=$(git rev-parse "origin/$GITHUB_BASE_REF")
 else
     # For push events, ensure enough history is available
-    git fetch origin --depth=2  # Fetch enough history for HEAD^
+    git fetch origin --deepen=2  # Fetch enough history for HEAD^
     base_commit="HEAD^"
 fi
 
